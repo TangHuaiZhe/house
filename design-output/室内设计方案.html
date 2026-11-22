@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>复式住宅室内设计方案 · 江景房</title>
+<style>
+  :root{
+    --ink:#2C2C2A; --ink2:#5F5E5A; --ink3:#8A8880;
+    --line:#E4E1D8; --paper:#FFFFFF; --bg:#F7F5F0;
+    --accent:#8C6B4F; --accent-soft:#EFE7DC;
+    --red:#A32D2D; --red-soft:#FCEBEB;
+    --green:#0F6E56; --green-soft:#E1F5EE;
+    --blue:#185FA5; --blue-soft:#E6F1FB;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:15px; line-height:1.75;
+  }
+  .page{max-width:960px; margin:0 auto; padding:48px 32px 80px;}
+  header.hero{border-bottom:3px solid var(--ink); padding-bottom:28px; margin-bottom:40px;}
+  .kicker{font-size:13px; letter-spacing:.18em; color:var(--accent); font-weight:500; margin:0 0 10px;}
+  h1{font-size:32px; line-height:1.3; margin:0 0 14px; font-weight:500;}
+  .sub{color:var(--ink2); font-size:15px; margin:0; max-width:720px;}
+  .meta-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:26px;}
+  .meta-card{background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:14px 16px;}
+  .meta-card .n{font-size:12px; color:var(--ink3); margin:0 0 4px;}
+  .meta-card .v{font-size:16px; font-weight:500; margin:0;}
+  section{margin:48px 0;}
+  h2{font-size:21px; font-weight:500; margin:0 0 6px; padding-top:8px;}
+  h2 .no{color:var(--accent); font-variant-numeric:tabular-nums; margin-right:10px;}
+  .lede{color:var(--ink2); margin:0 0 22px; max-width:760px;}
+  h3{font-size:16px; font-weight:500; margin:28px 0 10px;}
+  p{margin:0 0 12px;}
+  table{width:100%; border-collapse:collapse; background:var(--paper); border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:14px;}
+  th,td{padding:11px 14px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{background:#F2EFE8; font-weight:500; color:var(--ink2); white-space:nowrap;}
+  tr:last-child td{border-bottom:none;}
+  .tag{display:inline-block; padding:2px 10px; border-radius:999px; font-size:12px; font-weight:500; white-space:nowrap;}
+  .tag-red{background:var(--red-soft); color:var(--red);}
+  .tag-green{background:var(--green-soft); color:var(--green);}
+  .tag-blue{background:var(--blue-soft); color:var(--blue);}
+  .tag-amber{background:#FAEEDA; color:#854F0B;}
+  .callout{border-left:3px solid var(--accent); background:var(--accent-soft); padding:16px 20px; border-radius:0 10px 10px 0; margin:20px 0;}
+  .callout.red{border-left-color:var(--red); background:var(--red-soft);}
+  .callout.green{border-left-color:var(--green); background:var(--green-soft);}
+  .callout p:last-child{margin-bottom:0;}
+  .plan-wrap{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:22px; margin:18px 0 8px;}
+  .plan-title{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;}
+  .plan-title strong{font-size:15px; font-weight:500;}
+  .plan-title span{font-size:12px; color:var(--ink3);}
+  .fig{background:var(--paper); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:18px 0;}
+  .fig img{width:100%; display:block;}
+  .fig .cap{padding:12px 18px; font-size:13px; color:var(--ink2); border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:16px;}
+  .fig .cap b{color:var(--ink); font-weight:500;}
+  ul.clean{list-style:none; padding:0; margin:12px 0;}
+  ul.clean li{position:relative; padding:8px 0 8px 26px; border-bottom:1px dashed var(--line);}
+  ul.clean li:last-child{border-bottom:none;}
+  ul.clean li::before{content:""; position:absolute; left:6px; top:17px; width:7px; height:7px; border-radius:2px; background:var(--accent);}
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .card{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:20px 22px;}
+  .card h4{margin:0 0 10px; font-size:15px; font-weight:500;}
+  .card ul{margin:0; padding-left:18px;}
+  .card li{margin-bottom:7px; font-size:14px;}
+  .price-table td:not(:first-child){font-variant-numeric:tabular-nums;}
+  .price-table .tier{font-weight:500;}
+  footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--line); color:var(--ink3); font-size:12.5px;}
+  .nowrap{white-space:nowrap;}
+  @media (max-width:760px){
+    .meta-grid{grid-template-columns:1fr 1fr;}
+    .two-col{grid-template-columns:1fr;}
+    .page{padding:28px 18px 60px;}
+    h1{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <p class="kicker">室内设计方案 · 第一版</p>
+  <h1>复式住宅改造方案：把江景和天台用到位</h1>
+  <p class="sub">依据一楼、二楼实测户型图与 14 张现场实拍整理。承重结构全部保留，楼梯原位不动，改造集中在非承重隔墙、收纳系统、厨卫效率、主卧套房化，以及屋顶天台的整体利用。本文件是方案沟通稿，不是施工图。</p>
+  <div class="meta-grid">
+    <div class="meta-card"><p class="n">户型</p><p class="v">复式 2 层 + 屋顶天台</p></div>
+    <div class="meta-card"><p class="n">套内估算</p><p class="v">约 110 ㎡ + 天台约 45 ㎡</p></div>
+    <div class="meta-card"><p class="n">核心资源</p><p class="v">南向江景 / 大天台</p></div>
+    <div class="meta-card"><p class="n">当前状态</p><p class="v">毛坯 + 局部简装</p></div>
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">01</span>结构红线：这些地方不能动</h2>
+  <p class="lede">户型图上的黑色实心墙体是承重墙，实拍照片也印证了这一点。下面清单按「绝对不动 / 需审批 / 可以动」三级划分。任何拆墙动作，以物业备案结构图和结构工程师现场意见为准，本方案不替代那一纸意见。</p>
+
+  <table>
+    <thead>
+      <tr><th>位置</th><th>判断</th><th>结论</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>东侧整面长外墙（一楼约 5.8m、二楼约 4.0m 段）</td><td><span class="tag tag-red">承重</span></td><td>不得开门洞、不得削薄、不得嵌装深柜破皮</td></tr>
+      <tr><td>厨房西墙 / 北墙、次卧东墙与北墙、卫生间周边墙体</td><td><span class="tag tag-red">承重</span></td><td>全部保留，仅可做表面装饰</td></tr>
+      <tr><td>楼梯梯段与梯梁（实拍确认为现浇石材踏步）</td><td><span class="tag tag-red">结构</span></td><td>位置、踏步数、走向全部不动，只更换栏杆扶手</td></tr>
+      <tr><td>南阳台栏板与推拉门洞口</td><td><span class="tag tag-amber">需审批</span></td><td>包封、扩洞、改门需物业书面同意</td></tr>
+      <tr><td>二楼北侧露台（标注「顶上铺空」）</td><td><span class="tag tag-amber">需审批</span></td><td>不得擅自封顶搭房间，违建与防水双重风险</td></tr>
+      <tr><td>天台护栏、屋面设备、雨水立管</td><td><span class="tag tag-amber">需审批</span></td><td>护栏可加玻璃挡板，设备与立管不得移位</td></tr>
+      <tr><td>餐厅与厅之间的隔墙 / 门洞、厨卫内部隔墙、主卧与书房隔墙非承重段</td><td><span class="tag tag-green">非承重</span></td><td>可拆改、可移门洞，但开工前仍需现场核实</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout red">
+    <p><strong>说直白点：</strong>AI 和设计稿都不会为你的结构安全负责。拆墙之前，让物业出结构图、让结构工程师签字，这笔钱不能省。效果图再好看，也比不上一面不能拆的墙。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">02</span>一楼方案：玄关 + 开放餐厨 + 江景客厅</h2>
+  <p class="lede">一楼的问题很清楚：进门没玄关、楼梯把厅切碎、厨房封闭压抑、收纳严重不足。改造目标是把「一个厅」变成「玄关—餐厅—客厅」三个层次，同时让南向江景成为视线终点。</p>
+
+  <div class="plan-wrap">
+    <div class="plan-title"><strong>一楼改造后功能分区示意</strong><span>示意图，非精确比例，非施工图</span></div>
+    <svg viewBox="0 0 560 430" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>一楼改造后功能分区示意图</title>
+      <rect x="0" y="0" width="560" height="430" fill="#FFFFFF"/>
+      <text x="280" y="26" text-anchor="middle" font-size="12" fill="#8A8880" font-family="sans-serif">北 ↑</text>
+      <!-- 厨房 -->
+      <rect x="52" y="42" width="120" height="158" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5" rx="4"/>
+      <text x="112" y="112" text-anchor="middle" font-size="14" fill="#0C447C" font-family="sans-serif" font-weight="500">厨房</text>
+      <text x="112" y="132" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">约 5.8 ㎡ · U型</text>
+      <text x="112" y="150" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">玻璃移门</text>
+      <!-- 卫 -->
+      <rect x="176" y="42" width="92" height="108" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5" rx="4"/>
+      <text x="222" y="88" text-anchor="middle" font-size="14" fill="#0C447C" font-family="sans-serif" font-weight="500">卫生间</text>
+      <text x="222" y="108" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">约 3.2 ㎡</text>
+      <text x="222" y="126" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">干湿分离</text>
+      <!-- 次卧 -->
+      <rect x="272" y="42" width="160" height="158" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1.5" rx="4"/>
+      <text x="352" y="112" text-anchor="middle" font-size="14" fill="#27500A" font-family="sans-serif" font-weight="500">次卧 / 长辈房</text>
+      <text x="352" y="132" text-anchor="middle" font-size="11" fill="#27500A" font-family="sans-serif">约 8.7 ㎡ · 北向安静</text>
+      <!-- 楼梯 -->
+      <rect x="272" y="204" width="160" height="76" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.5" rx="4"/>
+      <text x="352" y="236" text-anchor="middle" font-size="14" fill="#2C2C2A" font-family="sans-serif" font-weight="500">楼梯（原位不动）</text>
+      <text x="352" y="256" text-anchor="middle" font-size="11" fill="#5F5E5A" font-family="sans-serif">下部做储藏间</text>
+      <!-- 入口 -->
+      <rect x="30" y="150" width="22" height="60" fill="#2C2C2A" rx="3"/>
+      <text x="40" y="228" text-anchor="middle" font-size="11" fill="#2C2C2A" font-family="sans-serif">入户</text>
+      <path d="M52 180 L88 180" stroke="#8C6B4F" stroke-width="1.5" fill="none" marker-end="url(#a1)"/>
+      <defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8C6B4F" stroke-width="1.5"/></marker></defs>
+      <!-- 玄关 -->
+      <rect x="52" y="204" width="88" height="76" fill="#EFE7DC" stroke="#8C6B4F" stroke-width="1.5" rx="4"/>
+      <text x="96" y="238" text-anchor="middle" font-size="13" fill="#5B4432" font-family="sans-serif" font-weight="500">玄关</text>
+      <text x="96" y="256" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">通顶柜</text>
+      <!-- 餐厅 -->
+      <rect x="52" y="284" width="150" height="100" fill="#EFE7DC" stroke="#8C6B4F" stroke-width="1.5" rx="4"/>
+      <text x="127" y="328" text-anchor="middle" font-size="14" fill="#5B4432" font-family="sans-serif" font-weight="500">餐厅</text>
+      <text x="127" y="348" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">约 7.8 ㎡ · 西墙餐边柜</text>
+      <!-- 客厅 -->
+      <rect x="206" y="284" width="226" height="100" fill="#EFE7DC" stroke="#8C6B4F" stroke-width="2" rx="4"/>
+      <text x="319" y="326" text-anchor="middle" font-size="15" fill="#5B4432" font-family="sans-serif" font-weight="500">客厅 · 江景观赏面</text>
+      <text x="319" y="346" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">沙发朝南 · 电视柜于西墙</text>
+      <text x="319" y="364" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">约 24 ㎡</text>
+      <!-- 阳台 -->
+      <rect x="206" y="388" width="226" height="32" fill="#FCEBEB" stroke="#A32D2D" stroke-width="1.5" rx="4"/>
+      <text x="319" y="408" text-anchor="middle" font-size="12" fill="#791F1F" font-family="sans-serif" font-weight="500">南向观景阳台（保留开放）</text>
+    </svg>
+  </div>
+
+  <h3>一楼改动清单</h3>
+  <ul class="clean">
+    <li><strong>新增玄关。</strong>入户门内侧做 1.2–1.4m 通顶玄关柜，换鞋、挂衣、收纳一体，顺带挡住从门外直视餐厅的视线。柜体做悬空底部放常穿鞋。</li>
+    <li><strong>餐厨之间改三联玻璃移门。</strong>厨房保持 U 型不动（烟道、燃气、排水都在原位），门洞换成黑色窄边三联玻璃门。开着是开放餐厨，炒菜时关上挡油烟，采光不受影响。</li>
+    <li><strong>客厅家具朝南。</strong>沙发背北朝南，面向阳台江景。电视柜放西墙（实墙段），不用大电视也可以考虑激光电视 + 抗光幕，把南面完整留给景观。</li>
+    <li><strong>楼梯下方做储藏间。</strong>现浇梯段不能动，但底部净空可以封一扇门，塞行李箱、吸尘器、工具箱。比空着强。</li>
+    <li><strong>一楼卫生间干湿分离。</strong>洗手台外移至过道侧，里面留马桶 + 淋浴。宽度只有 1.47m 左右，别硬塞浴缸。</li>
+    <li><strong>一楼次卧做长辈房。</strong>北向安静，离卫生间近。床靠西墙，预留轮椅回转余地，门口做无门槛石。</li>
+    <li><strong>阳台保持开放。</strong>南向江景阳台是这套房最贵的几平方米，别拿来晾衣服、别包封进客厅。休闲阳台，放两把椅子一株绿植就够。</li>
+    <li><strong>全屋收纳量化。</strong>按 3–4 口人标准，一楼需新增收纳投影面积约 8–10 延米（玄关柜、餐边柜、电视柜、楼梯下储藏、次卧衣柜）。</li>
+  </ul>
+
+  <h3>楼梯专项设计</h3>
+  <p>楼梯是现浇结构，梯段、梯梁、踏步数、平台位置、梯井宽度<strong>全部不动</strong>——这是红线。改造只做三件事：换栏杆、翻新踏面、榨干梯下。</p>
+  <ul class="clean">
+    <li><strong>栏杆全换。</strong>现状木立柱 + 木扶手视觉厚重、显旧，和全屋现代简约不搭。换成 50×8 黑色氟碳漆扁钢立柱（间距 ≤1000）+ 6+1.14PVB+6 超白夹胶玻璃栏板 + 黑色金属扶手 50×40。栏杆总高从踏步前缘起 ≥1050mm。玻璃通透，楼梯井不压抑，光线能穿过去。</li>
+    <li><strong>踏步翻新。</strong>原深色石材踏步保留梯段，表面打磨翻新成哑光面，前缘开 2 道 3mm 深防滑槽。每级踢面上沿暗藏 24V 低压 LED 暖光灯带（3000K），夜间上楼不用开顶灯，顺便把梯段轮廓勾出来。</li>
+    <li><strong>梯下做储藏间。</strong>楼梯下部净高约 1.9m，做一樘 800mm 宽哑光白平板门，内部做 4 层活动层板。放行李箱、吸尘器、工具箱、换季物品，比空着强十倍。不要塞空调外机或设备主机，散热和检修都不行。</li>
+    <li><strong>二楼梯口过道。</strong>净宽约 1.29m，任一侧做 30–35cm 深薄收纳柜（家政柜或书柜），不影响通行。</li>
+  </ul>
+
+  <div class="plan-wrap">
+    <div class="plan-title"><strong>楼梯改造设计图</strong><span>示意图，非施工图；实际踏步数与跑向以现场实测为准</span></div>
+    <svg viewBox="0 0 680 400" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>楼梯改造设计图：平面、栏杆节点、踏步做法</title>
+      <rect x="0" y="0" width="680" height="400" fill="#FFFFFF"/>
+      <text x="20" y="26" font-size="13" font-weight="500" fill="#2C2C2A" font-family="sans-serif">楼梯平面（俯视）</text>
+      <rect x="20" y="38" width="280" height="240" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="1"/>
+      <rect x="36" y="54" width="98" height="78" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+      <text x="85" y="88" font-size="11.5" font-weight="500" fill="#2C2C2A" text-anchor="middle" font-family="sans-serif">转角平台</text>
+      <text x="85" y="106" font-size="10.5" fill="#5F5E5A" text-anchor="middle" font-family="sans-serif">约 1100×1100</text>
+      <rect x="140" y="54" width="144" height="78" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+      <line x1="162" y1="54" x2="162" y2="132" stroke="#888780" stroke-width="0.5"/>
+      <line x1="184" y1="54" x2="184" y2="132" stroke="#888780" stroke-width="0.5"/>
+      <line x1="206" y1="54" x2="206" y2="132" stroke="#888780" stroke-width="0.5"/>
+      <line x1="228" y1="54" x2="228" y2="132" stroke="#888780" stroke-width="0.5"/>
+      <line x1="250" y1="54" x2="250" y2="132" stroke="#888780" stroke-width="0.5"/>
+      <path d="M150 93 L272 93" fill="none" stroke="#8C6B4F" stroke-width="1.5" marker-end="url(#pa)"/>
+      <text x="211" y="74" font-size="10.5" fill="#5B4432" text-anchor="middle" font-family="sans-serif">跑2 · 上行至二层</text>
+      <rect x="36" y="140" width="98" height="124" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+      <line x1="36" y1="162" x2="134" y2="162" stroke="#888780" stroke-width="0.5"/>
+      <line x1="36" y1="184" x2="134" y2="184" stroke="#888780" stroke-width="0.5"/>
+      <line x1="36" y1="206" x2="134" y2="206" stroke="#888780" stroke-width="0.5"/>
+      <line x1="36" y1="228" x2="134" y2="228" stroke="#888780" stroke-width="0.5"/>
+      <path d="M85 256 L85 150" fill="none" stroke="#8C6B4F" stroke-width="1.5" marker-end="url(#pa)"/>
+      <text x="85" y="190" font-size="10.5" fill="#5B4432" text-anchor="middle" font-family="sans-serif">跑1 · 上行 9 级</text>
+      <rect x="140" y="140" width="144" height="124" fill="none" stroke="#8C6B4F" stroke-width="1" stroke-dasharray="5 4"/>
+      <text x="212" y="192" font-size="11.5" font-weight="500" fill="#5B4432" text-anchor="middle" font-family="sans-serif">梯下储藏间</text>
+      <text x="212" y="210" font-size="10.5" fill="#5B4432" text-anchor="middle" font-family="sans-serif">净高约 1.9m · 门宽 800</text>
+      <text x="85" y="296" font-size="10.5" fill="#5F5E5A" text-anchor="middle" font-family="sans-serif">梯段净宽约 1050</text>
+      <text x="212" y="296" font-size="10.5" fill="#5F5E5A" text-anchor="middle" font-family="sans-serif">踏面 270 · 踢面 161</text>
+
+      <text x="330" y="26" font-size="13" font-weight="500" fill="#2C2C2A" font-family="sans-serif">栏杆节点（剖面）</text>
+      <rect x="330" y="38" width="330" height="112" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="0.5"/>
+      <rect x="356" y="130" width="96" height="8" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.5"/>
+      <rect x="356" y="138" width="8" height="12" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.5"/>
+      <rect x="378" y="54" width="7" height="76" fill="#2C2C2A"/>
+      <rect x="388" y="57" width="5" height="73" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+      <rect x="376" y="45" width="46" height="8" fill="#2C2C2A"/>
+      <line x1="342" y1="53" x2="342" y2="130" stroke="#8C6B4F" stroke-width="1"/>
+      <text x="356" y="45" font-size="10.5" fill="#8C6B4F" font-family="sans-serif">栏高≥1050</text>
+      <text x="444" y="70" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">黑色金属立柱 50×8，间距≤1000</text>
+      <text x="444" y="90" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">超白夹胶玻璃 6+1.14PVB+6</text>
+      <text x="444" y="110" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">黑色金属扶手 50×40</text>
+      <text x="444" y="130" font-size="10.5" fill="#5F5E5A" font-family="sans-serif">玻璃通透，替代原木栏杆</text>
+
+      <text x="330" y="180" font-size="13" font-weight="500" fill="#2C2C2A" font-family="sans-serif">踏步做法（剖面）</text>
+      <rect x="330" y="192" width="330" height="112" fill="#FFFFFF" stroke="#2C2C2A" stroke-width="0.5"/>
+      <rect x="356" y="246" width="120" height="11" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.5"/>
+      <rect x="356" y="257" width="11" height="40" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="0.5"/>
+      <line x1="372" y1="246" x2="372" y2="257" stroke="#2C2C2A" stroke-width="1"/>
+      <line x1="382" y1="246" x2="382" y2="257" stroke="#2C2C2A" stroke-width="1"/>
+      <rect x="367" y="264" width="8" height="5" fill="#EF9F27"/>
+      <rect x="410" y="264" width="8" height="5" fill="#EF9F27"/>
+      <text x="494" y="226" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">石材翻新哑光面，保留原梯段</text>
+      <text x="494" y="246" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">前缘 2 道防滑槽，深 3mm</text>
+      <text x="494" y="266" font-size="10.5" fill="#2C2C2A" font-family="sans-serif">踢面上沿 LED 暖光 3000K</text>
+      <text x="494" y="286" font-size="10.5" fill="#5F5E5A" font-family="sans-serif">夜间照明 + 氛围，低压 24V</text>
+
+      <defs>
+        <marker id="pa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#8C6B4F" stroke-width="1.5"/>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="fig">
+    <img src="楼梯效果图.png" alt="楼梯改造效果图">
+    <div class="cap"><span><b>楼梯</b> · 黑金属立柱 + 超白夹胶玻璃栏板，石材踏步翻新 + 暗藏灯带，梯下做储藏柜</span><span>对应原图：一楼楼梯位置</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">03</span>二楼方案：主卧套房化 + 多功能书房</h2>
+  <p class="lede">二楼的问题是主卧虽大却没有独立卫浴、9.2㎡ 的「卫生房」浪费、楼梯口过道仅 1.29m 显得压抑、北侧露台闲置。改造核心是把西南区域整体做成主卧套房。</p>
+
+  <div class="plan-wrap">
+    <div class="plan-title"><strong>二楼改造后功能分区示意</strong><span>示意图，非精确比例，非施工图</span></div>
+    <svg viewBox="0 0 560 430" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>二楼改造后功能分区示意图</title>
+      <rect x="0" y="0" width="560" height="430" fill="#FFFFFF"/>
+      <text x="280" y="26" text-anchor="middle" font-size="12" fill="#8A8880" font-family="sans-serif">北 ↑</text>
+      <!-- 露台 -->
+      <rect x="52" y="42" width="120" height="158" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5" rx="4"/>
+      <text x="112" y="106" text-anchor="middle" font-size="14" fill="#04342C" font-family="sans-serif" font-weight="500">北露台</text>
+      <text x="112" y="126" text-anchor="middle" font-size="11" fill="#04342C" font-family="sans-serif">顶上铺空 · 保持露天</text>
+      <text x="112" y="144" text-anchor="middle" font-size="11" fill="#04342C" font-family="sans-serif">洗衣 + 绿植区</text>
+      <!-- 卫 -->
+      <rect x="176" y="42" width="92" height="108" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5" rx="4"/>
+      <text x="222" y="88" text-anchor="middle" font-size="14" fill="#0C447C" font-family="sans-serif" font-weight="500">公卫</text>
+      <text x="222" y="108" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">约 3.2 ㎡</text>
+      <text x="222" y="126" text-anchor="middle" font-size="11" fill="#0C447C" font-family="sans-serif">服务次卧书房</text>
+      <!-- 次卧 -->
+      <rect x="272" y="42" width="160" height="158" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1.5" rx="4"/>
+      <text x="352" y="112" text-anchor="middle" font-size="14" fill="#27500A" font-family="sans-serif" font-weight="500">次卧 / 儿童房</text>
+      <text x="352" y="132" text-anchor="middle" font-size="11" fill="#27500A" font-family="sans-serif">约 8.7 ㎡</text>
+      <!-- 楼梯 -->
+      <rect x="272" y="204" width="160" height="76" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.5" rx="4"/>
+      <text x="352" y="236" text-anchor="middle" font-size="14" fill="#2C2C2A" font-family="sans-serif" font-weight="500">楼梯（下）</text>
+      <text x="352" y="256" text-anchor="middle" font-size="11" fill="#5F5E5A" font-family="sans-serif">过道侧做薄收纳柜</text>
+      <!-- 书房 -->
+      <rect x="436" y="204" width="100" height="180" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5" rx="4"/>
+      <text x="486" y="282" text-anchor="middle" font-size="14" fill="#3C3489" font-family="sans-serif" font-weight="500">书房</text>
+      <text x="486" y="302" text-anchor="middle" font-size="11" fill="#3C3489" font-family="sans-serif">约 11.9 ㎡</text>
+      <text x="486" y="320" text-anchor="middle" font-size="11" fill="#3C3489" font-family="sans-serif">含沙发床</text>
+      <!-- 主卧套房 -->
+      <rect x="52" y="284" width="380" height="100" fill="#EFE7DC" stroke="#8C6B4F" stroke-width="2" rx="4"/>
+      <text x="180" y="326" text-anchor="middle" font-size="15" fill="#5B4432" font-family="sans-serif" font-weight="500">主卧 · 约 15 ㎡</text>
+      <text x="180" y="346" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">床朝南向江景</text>
+      <text x="380" y="326" text-anchor="middle" font-size="14" fill="#5B4432" font-family="sans-serif" font-weight="500">主卫 + 衣帽</text>
+      <text x="380" y="346" text-anchor="middle" font-size="11" fill="#5B4432" font-family="sans-serif">原 9.2 ㎡ 卫生房改造</text>
+      <line x1="300" y1="296" x2="300" y2="372" stroke="#8C6B4F" stroke-width="1" stroke-dasharray="4 3"/>
+    </svg>
+  </div>
+
+  <h3>二楼改动清单</h3>
+  <ul class="clean">
+    <li><strong>主卧套房化。</strong>把西南 9.2㎡「卫生房」拆成两块：靠内侧做主卫（淋浴 + 台盆 + 马桶，保留原有排水点位），靠主卧侧做步入式衣帽间。主卧与衣帽间之间不装门，做成套间动线。</li>
+    <li><strong>主卧床头朝西、床尾朝南。</strong>南向大窗和江景完整保留。床头背景做木饰面 + 竖向格栅 + 暗藏灯带，侧边整墙衣柜。</li>
+    <li><strong>书房做多功能房。</strong>东侧 11.9㎡ 书房放 1.6m 书桌 + 整墙书柜 + 沙发床，平时办公，来客住人。东向采光适合工作，比南向稳定。</li>
+    <li><strong>楼梯口过道加薄柜。</strong>过道净宽 1.29m，两侧任一侧做 30–35cm 深的薄收纳柜（家政柜或书柜），不影响通行。</li>
+    <li><strong>北露台做家务绿植区。</strong>已有排水立管和地漏，正好放洗衣机 + 烘干机叠放柜、拖把池，另一侧种耐候绿植。顶上是空的，不封顶，做耐候材料。</li>
+    <li><strong>二楼公卫干湿分离。</strong>3.2㎡ 服务次卧和书房，台盆外移，里面淋浴 + 马桶。</li>
+    <li><strong>二楼独立入户门的处理先定性。</strong>实拍与图上显示西侧有「二楼入户」。如果是独立产权动线或消防门，保留并做门厅收纳；如果只是内部通行口，可以改成室内门通向主卧套间。这条必须先和物业确认清楚，别先砸。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">04</span>天台方案：这套房最大的价值点</h2>
+  <p class="lede">天台南向正对开阔水面，对岸有城市天际线，视野没有遮挡。这是全屋最值得投入的一块。前提是防水重做、地面架空、水电到位。</p>
+
+  <div class="two-col">
+    <div class="card">
+      <h4>分区建议</h4>
+      <ul>
+        <li><strong>南向观景平台：</strong>户外沙发组 + 茶几 + 遮阳伞，护栏内侧加 60cm 透明夹胶玻璃挡风板，不挡视线。</li>
+        <li><strong>北向功能区：</strong>耐候储藏柜、洗衣晾晒（如果二楼露台不够用）、工具柜。</li>
+        <li><strong>绿化带：</strong>沿护栏内侧做长条花池，种观赏草、狼尾草、小灌木，耐晒耐风。</li>
+        <li><strong>动线：</strong>从上人孔或楼梯间出来先到功能区，再进入观景区。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>必须做对的三件事</h4>
+      <ul>
+        <li><strong>防水：</strong>原防水层全部铲除重做，建议聚脲或 TPO + 混凝土保护层，闭水试验 48 小时以上。这一步做砸，楼下就是水帘洞。</li>
+        <li><strong>地面架空：</strong>防腐木塑或石材架空铺贴，绝不在防水层上直接贴砖。</li>
+        <li><strong>排水：</strong>保留并疏通原雨水口，面层找坡 1%–2% 向雨水口，花池设独立排水。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>违规风险提醒：</strong>天台加建玻璃房、阳光房、封闭房间，绝大多数城市属于违建，会被责令拆除且影响房屋交易。要做就做可逆的软装和轻质构筑物（廊架、遮阳篷、花池），不要砌墙盖顶。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">05</span>改造效果图</h2>
+  <p class="lede">以下效果图由图像模型基于你的现场实拍图生成，锁定原户型结构、门窗位置与拍摄视角，只替换装修与家具。是意向参考，不是施工依据；实际材质以样板间和材料实样为准。</p>
+
+  <div class="fig">
+    <img src="客厅效果图.png" alt="客厅改造效果图">
+    <div class="cap"><span><b>客厅</b> · 沙发朝南看江景，楼梯改黑金属 + 玻璃栏板，橡木地板 + 无主灯</span><span>对应原图：一楼厅（朝南看）</span></div>
+  </div>
+
+  <div class="fig">
+    <img src="餐厨效果图.png" alt="餐厨改造效果图">
+    <div class="cap"><span><b>厨房</b> · U 型布局不动，暖灰哑光门板 + 岩板台面，黑色窄边玻璃移门</span><span>对应原图：厨房朝北看</span></div>
+  </div>
+
+  <div class="fig">
+    <img src="主卧效果图.png" alt="主卧改造效果图">
+    <div class="cap"><span><b>主卧</b> · 床尾正对南向江景窗，木格栅床头背景 + 通顶衣柜</span><span>对应原图：二楼南向主卧</span></div>
+  </div>
+
+  <div class="fig">
+    <img src="天台效果图.png" alt="天台改造效果图">
+    <div class="cap"><span><b>天台</b> · 木塑架空地面 + 玻璃挡风板 + 观景沙发组 + 护栏花池灯带</span><span>对应原图：天台朝南看</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">06</span>材料与设备建议</h2>
+  <table>
+    <thead>
+      <tr><th>项目</th><th>推荐做法</th><th>避坑点</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="nowrap">全屋地面</td><td>客餐厅 + 卧室通铺浅橡木三层实木或木纹砖；厨卫阳台用灰色防滑砖</td><td>江景房楼层高、风大，木地板要选稳定性好的，别用纯实木大板</td></tr>
+      <tr><td class="nowrap">门窗玻璃</td><td>保留原窗框，玻璃升级 Low-E 中空钢化；阳台推拉门换黑色窄边断桥铝</td><td>西晒和东晒时段明显，Low-E 不能省；大玻璃要钢化 + 夹胶</td></tr>
+      <tr><td class="nowrap">厨房</td><td>石英石或岩板台面、大单槽、侧吸油烟机、集成吊顶改石膏板平顶</td><td>烟道必换止逆阀；水槽下预留净水和洗碗机位</td></tr>
+      <tr><td class="nowrap">卫生间</td><td>墙排马桶（如原位允许）、壁挂台盆、长条地漏、风暖浴霸</td><td>防水刷到 1.8m，淋浴区满墙；闭水试验 48h</td></tr>
+      <tr><td class="nowrap">楼梯</td><td>梯段不动，栏杆换黑色细金属立柱 + 夹胶玻璃栏板，扶手实木或金属</td><td>玻璃栏板高度不低 1.05m，立柱间距不大于 11cm</td></tr>
+      <tr><td class="nowrap">空调新风</td><td>保留风管机，检修口位置留足；如加新风，走厨房和过道吊顶</td><td>风管机内机位置不能随便挪，吊顶高度先量清楚</td></tr>
+      <tr><td class="nowrap">天台</td><td>聚脲/TPO 防水 + 保护层 + 木塑架空地面 + 户外电源 + 水龙头</td><td>防水闭水试验 48h 起，地面绝不直贴砖</td></tr>
+      <tr><td class="nowrap">灯光</td><td>全屋无主灯：磁吸轨道 + 筒灯 + 暗藏灯带；色温 3000–3500K</td><td>客厅别用冷白光，江景房需要暖光压住大面积玻璃的冷感</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="no">07</span>预算参考（不含家电软装）</h2>
+  <p class="lede">按套内约 110㎡ 复式 + 天台约 45㎡ 估算，人工材料随城市浮动很大，以下是常见一二线城市区间，仅供排期参考。最终以三家报价为准。</p>
+  <table class="price-table">
+    <thead>
+      <tr><th>分项</th><th>经济实用档</th><th>品质全案档</th><th>高配轻奢档</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>拆改 + 水电 + 防水</td><td>8–11 万</td><td>12–16 万</td><td>18–24 万</td></tr>
+      <tr><td>泥瓦 + 瓷砖 + 地面</td><td>7–10 万</td><td>12–17 万</td><td>20–28 万</td></tr>
+      <tr><td>木作 + 全屋柜类</td><td>10–14 万</td><td>18–26 万</td><td>32–45 万</td></tr>
+      <tr><td>油漆 + 吊顶 + 门窗套</td><td>5–7 万</td><td>8–12 万</td><td>14–20 万</td></tr>
+      <tr><td>洁具 + 厨房设备</td><td>4–6 万</td><td>8–13 万</td><td>18–28 万</td></tr>
+      <tr><td>天台专项（防水/地面/花池/遮阳）</td><td>5–8 万</td><td>9–14 万</td><td>18–28 万</td></tr>
+      <tr><td>楼梯栏杆 + 智能灯光</td><td>2–3 万</td><td>4–7 万</td><td>9–15 万</td></tr>
+      <tr class="tier"><td>合计（硬装 + 天台）</td><td>约 28–40 万</td><td>约 55–80 万</td><td>约 100–150 万</td></tr>
+    </tbody>
+  </table>
+  <div class="callout green">
+    <p><strong>钱要花在刀刃上：</strong>优先级排序是 ① 天台防水与排水 ② 水电与防水隐蔽工程 ③ 全屋收纳柜体 ④ 门窗玻璃 ⑤ 主材颜值。别在防水和电上省钱，省下的钱会在入住第二年加倍还回去。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">08</span>施工避坑清单</h2>
+  <div class="two-col">
+    <div class="card">
+      <h4>开工前</h4>
+      <ul>
+        <li>物业备案 + 结构图核对，确认承重墙范围，签字留底。</li>
+        <li>二楼独立入户门的产权与消防属性先定性，再决定封堵或保留。</li>
+        <li>天台防水重做方案让物业看一遍，避免日后漏水责任扯皮。</li>
+        <li>燃气改管、烟道移位要燃气公司出方案，不能让装修队私改。</li>
+        <li>中央空调风管机内机位置实测，吊顶高度先放线。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>施工中</h4>
+      <ul>
+        <li>卫生间、露台、天台防水施工后必须 48 小时闭水试验，拍照留底。</li>
+        <li>水电改造拍照 + 录像 + 全屋 VR，柜子装完前存档。</li>
+        <li>墙砖空鼓率验收，淋浴区满墙防水。</li>
+        <li>玻璃栏板、阳光房类的夹胶层和钢化标识要现场核对。</li>
+        <li>主材进场验收型号，样板与到货对色。</li>
+      </ul>
+    </div>
+  </div>
+  <ul class="clean">
+    <li><strong>壁挂马桶、岩板台面、台上盆、吊轨推拉门</strong>这几样是常见施工陷阱：壁挂马桶要假墙且对水箱质量敏感，岩板台面拼接易崩边，台上盆不好擦，吊轨推拉门时间长易下沉。能落地台盆就落地，能地轨就地轨。</li>
+    <li><strong>天台晾晒别依赖固定晾衣架</strong>，江边风大，晾衣架要加抗风拉结；烘干机优先。</li>
+    <li><strong>别在承重墙或外墙开槽埋深管</strong>，钢筋保护层被切会锈胀。</li>
+    <li><strong>复式楼梯下空间不要塞设备主机</strong>，散热和检修都不行。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">09</span>需要你拍板的问题</h2>
+  <p class="lede">下面这几条会直接改方案，确认后我出第二版细化方案和平面布置图。</p>
+  <table>
+    <thead><tr><th>#</th><th>问题</th><th>影响</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>常住人口？要不要保留 3 间卧室（一楼次卧 + 二楼次卧 + 主卧），还是允许合并一间做衣帽间/健身房？</td><td>决定二楼次卧去留</td></tr>
+      <tr><td>2</td><td>二楼那个独立入户门是什么性质？自用、出租、还是消防门？</td><td>决定要不要封堵、要不要做双钥匙</td></tr>
+      <tr><td>3</td><td>预算区间大概多少？</td><td>决定主材档次和天台投入深度</td></tr>
+      <tr><td>4</td><td>风格倾向：现代简约 / 原木 / 奶油 / 轻奢 / 工业？</td><td>影响材料与效果图第二版</td></tr>
+      <tr><td>5</td><td>要不要保留浴缸？主卫做淋浴还是浴缸 + 淋浴？</td><td>决定主卫布局</td></tr>
+      <tr><td>6</td><td>天台主要用途：观景会客 / 花园菜园 / 晾晒家务 / 烧烤派对？</td><td>决定天台分区与水电点位</td></tr>
+      <tr><td>7</td><td>要不要做全屋智能、地暖、新风？</td><td>影响水电改造量与吊顶</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p>本方案基于用户提供的户型图与现场实拍照片整理。承重墙判断以物业备案结构图和结构工程师意见为准；面积为估算值，以实测为准；预算为区间参考，以实际报价为准。效果图由 AI 生成，仅作设计意向参考，不作为施工依据。</p>
+  <p>生成时间：2026-11-22 · 工作目录：/Users/tanghuaizhe/Dev/house/design-output</p>
+</footer>
+
+</div>
+</body>
+</html>
